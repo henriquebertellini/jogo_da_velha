@@ -33,3 +33,8 @@ main {
 input[type=button]{
     background-color: #B0EBFF;
 }
+.botao {
+    width: 160px;
+    height: 30px;
+    border-radius: 30px;
+}
