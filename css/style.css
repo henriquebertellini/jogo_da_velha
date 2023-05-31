@@ -23,3 +23,13 @@ main {
 .fonte {
     font-family: Lucida Handwriting;
 }
+.local {
+    position: fixed;
+    transform: scaleX(-1);
+    top: 170px;
+    left: 50px;
+    pointer-events: none;
+}
+input[type=button]{
+    background-color: #B0EBFF;
+}
