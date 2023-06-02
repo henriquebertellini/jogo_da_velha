@@ -1,47 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Velha</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
-    <link rel="icon" href="img/jogo-da-velha.png">
 </head>
-<img class="local" src="img/velha.png" alt="velha">
+
 <body>
     <main>
         <section>
-            <br><br>
-            <h1 class="fonte">Jogo da Velha</h1>
+            <h1 class="texto">Jogo da Velha</h1>
         </section>
-        <br><hr class="hr"><br>
-        <section class="tabuleiro">
+
+        <section id="containerPersonagens" class="containerPersonagens">
+            <h2 class="texto">Selecione o <span id="ordemPersonagem">1º</span> personagem</h2>
+            <div>
+                <input type="button" value=" " id="poke1" onclick="clickPoke('mario')">
+                <input type="button" value=" " id="poke2" onclick="clickPoke('toad')">
+                <input type="button" value=" " id="poke3" onclick="clickPoke('luigi')">
+            </div>
+            <div>
+                <input type="button" value=" " id="poke4" onclick="clickPoke('boo')">
+                <input type="button" value=" " id="poke5" onclick="clickPoke('yoshi')">
+                <input type="button" value=" " id="poke6" onclick="clickPoke('goomba')">
+            </div>
+        </section>
+
+        <section id="containerTabuleiro" class="tabuleiro">
             <div>
                 <input type="button" value=" " id="btn1" onclick="clickBtn1()">
-                 <input type="button" value=" " id="btn2" onclick="clickBtn2()">
-                 <input type="button" value=" " id="btn3" onclick="clickBtn3()">
-                </div>
+                <input type="button" value=" " id="btn2" onclick="clickBtn2()">
+                <input type="button" value=" " id="btn3" onclick="clickBtn3()">
+            </div>
             <div>
-                 <input type="button" value=" " id="btn4" onclick="clickBtn4()">
+                <input type="button" value=" " id="btn4" onclick="clickBtn4()">
                 <input type="button" value=" " id="btn5" onclick="clickBtn5()">
                 <input type="button" value=" " id="btn6" onclick="clickBtn6()">
             </div>
-            <div> 
+            <div>
                 <input type="button" value=" " id="btn7" onclick="clickBtn7()">
                 <input type="button" value=" " id="btn8" onclick="clickBtn8()">
                 <input type="button" value=" " id="btn9" onclick="clickBtn9()">
             </div>
-        </section>
-        <section>
-            <h2>
-                <span id="lblJogador">Jogador X </span> 
-                <span id="lblJogadas">(1ª Jogada)</span> 
-            </h2>
-            <input class="botao" type="button" value="Reiniciar" id="btnReiniciar" onclick="clickReiniciar()">
+
+            <section>
+                <h2 class="texto">
+                    <span id="lblJogador">Jogador 1</span>
+                    <span id="lblJogadas">(1ª Jogada)</span>
+                </h2>
+
+                <input class="input" type="button" onclick="location.reload()" value="Jogar Novamente" id="reiniciar">
+            </section>
         </section>
     </main>
-    
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
+
 </html>

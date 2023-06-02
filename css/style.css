@@ -1,9 +1,10 @@
 body {
-    background-color: rgb(107, 163, 181);
+    background-image: url(../img/background.jpeg);
 }
 main {
     text-align: center;
 }
+
 .tabuleiro div input {
     width: 100px;
     height: 100px;
@@ -12,29 +13,29 @@ main {
     border-radius: 6px;
     font-size: 30px;
     cursor: pointer;
+    background-size: 100%;
+    /* background-image: url('../img/vazio.png'); */
 }
-/* .tabuleiro div input:hover {
-    opacity: 0.5;
-} */
-.hr {
-    width: 70%;
-    background-color: black;
+
+.containerPersonagens div input {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    font-size: 30px;
+    cursor: pointer;
+    background-size: 100%;
 }
-.fonte {
-    font-family: Lucida Handwriting;
+
+img {
+    width: 130px;
+    height: 130px;
 }
-.local {
-    position: fixed;
-    transform: scaleX(-1);
-    top: 170px;
-    left: 50px;
-    pointer-events: none;
+.input {
+    background-color: lightblue;
 }
-input[type=button]{
-    background-color: #B0EBFF;
-}
-.botao {
-    width: 160px;
-    height: 30px;
-    border-radius: 30px;
+.texto {
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
